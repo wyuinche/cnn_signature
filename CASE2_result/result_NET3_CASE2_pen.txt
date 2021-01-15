@@ -1,0 +1,105 @@
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+time_distributed (TimeDistri (None, 10, 58, 40, 96)    46560     
+_________________________________________________________________
+time_distributed_1 (TimeDist (None, 10, 28, 19, 96)    0         
+_________________________________________________________________
+time_distributed_2 (TimeDist (None, 10, 28, 19, 96)    0         
+_________________________________________________________________
+time_distributed_3 (TimeDist (None, 10, 28, 19, 256)   614656    
+_________________________________________________________________
+time_distributed_4 (TimeDist (None, 10, 13, 9, 256)    0         
+_________________________________________________________________
+time_distributed_5 (TimeDist (None, 10, 13, 9, 256)    0         
+_________________________________________________________________
+time_distributed_6 (TimeDist (None, 10, 13, 9, 384)    885120    
+_________________________________________________________________
+time_distributed_7 (TimeDist (None, 10, 13, 9, 1)      3457      
+_________________________________________________________________
+time_distributed_8 (TimeDist (None, 10, 13, 9, 1)      10        
+_________________________________________________________________
+time_distributed_9 (TimeDist (None, 10, 6, 4, 1)       0         
+_________________________________________________________________
+time_distributed_10 (TimeDis (None, 10, 6, 4, 1)       0         
+_________________________________________________________________
+time_distributed_11 (TimeDis (None, 10, 24)            0         
+_________________________________________________________________
+lstm (LSTM)                  (None, 128)               78336     
+_________________________________________________________________
+dense (Dense)                (None, 2)                 258       
+=================================================================
+Total params: 1,628,397
+Trainable params: 1,628,397
+Non-trainable params: 0
+_________________________________________________________________
+Train on 45 samples, validate on 10 samples
+WARNING:tensorflow:From C:\Users\Administrator\anaconda3\lib\site-packages\tensorflow\python\ops\math_grad.py:1250: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+Epoch 1/25
+45/45 [==============================] - 11s 242ms/sample - loss: 0.6891 - acc: 0.6444 - val_loss: 0.6942 - val_acc: 0.5000
+Epoch 2/25
+45/45 [==============================] - 10s 212ms/sample - loss: 0.6756 - acc: 0.6667 - val_loss: 0.6985 - val_acc: 0.5000
+Epoch 3/25
+45/45 [==============================] - 10s 230ms/sample - loss: 0.6550 - acc: 0.6667 - val_loss: 0.7143 - val_acc: 0.5000
+Epoch 4/25
+45/45 [==============================] - 10s 217ms/sample - loss: 0.6342 - acc: 0.6667 - val_loss: 0.7502 - val_acc: 0.5000
+Epoch 5/25
+45/45 [==============================] - 9s 211ms/sample - loss: 0.6598 - acc: 0.6667 - val_loss: 0.8233 - val_acc: 0.5000
+Epoch 6/25
+45/45 [==============================] - 10s 214ms/sample - loss: 0.6450 - acc: 0.6667 - val_loss: 0.7683 - val_acc: 0.5000
+Epoch 7/25
+45/45 [==============================] - 11s 251ms/sample - loss: 0.6399 - acc: 0.6667 - val_loss: 0.7375 - val_acc: 0.5000
+Epoch 8/25
+45/45 [==============================] - 10s 216ms/sample - loss: 0.6445 - acc: 0.6667 - val_loss: 0.7249 - val_acc: 0.5000
+Epoch 9/25
+45/45 [==============================] - 10s 220ms/sample - loss: 0.6401 - acc: 0.6667 - val_loss: 0.7307 - val_acc: 0.5000
+Epoch 10/25
+45/45 [==============================] - 10s 217ms/sample - loss: 0.6384 - acc: 0.6667 - val_loss: 0.7476 - val_acc: 0.5000
+Epoch 11/25
+45/45 [==============================] - 10s 227ms/sample - loss: 0.6369 - acc: 0.6667 - val_loss: 0.7606 - val_acc: 0.5000
+Epoch 12/25
+45/45 [==============================] - 10s 222ms/sample - loss: 0.6377 - acc: 0.6667 - val_loss: 0.7649 - val_acc: 0.5000
+Epoch 13/25
+45/45 [==============================] - 11s 234ms/sample - loss: 0.6402 - acc: 0.6667 - val_loss: 0.7679 - val_acc: 0.5000
+Epoch 14/25
+45/45 [==============================] - 10s 223ms/sample - loss: 0.6355 - acc: 0.6667 - val_loss: 0.7491 - val_acc: 0.5000
+Epoch 15/25
+45/45 [==============================] - 9s 210ms/sample - loss: 0.6335 - acc: 0.6667 - val_loss: 0.7340 - val_acc: 0.5000
+Epoch 16/25
+45/45 [==============================] - 10s 216ms/sample - loss: 0.6400 - acc: 0.6667 - val_loss: 0.7220 - val_acc: 0.5000
+Epoch 17/25
+45/45 [==============================] - 10s 211ms/sample - loss: 0.6424 - acc: 0.6667 - val_loss: 0.7213 - val_acc: 0.5000
+Epoch 18/25
+45/45 [==============================] - 10s 212ms/sample - loss: 0.6415 - acc: 0.6667 - val_loss: 0.7250 - val_acc: 0.5000
+Epoch 19/25
+45/45 [==============================] - 10s 212ms/sample - loss: 0.6429 - acc: 0.6667 - val_loss: 0.7413 - val_acc: 0.5000
+Epoch 20/25
+45/45 [==============================] - 10s 220ms/sample - loss: 0.6412 - acc: 0.6667 - val_loss: 0.7552 - val_acc: 0.5000
+Epoch 21/25
+45/45 [==============================] - 10s 226ms/sample - loss: 0.6388 - acc: 0.6667 - val_loss: 0.7497 - val_acc: 0.5000
+Epoch 22/25
+45/45 [==============================] - 10s 222ms/sample - loss: 0.6370 - acc: 0.6667 - val_loss: 0.7441 - val_acc: 0.5000
+Epoch 23/25
+45/45 [==============================] - 9s 209ms/sample - loss: 0.6378 - acc: 0.6667 - val_loss: 0.7439 - val_acc: 0.5000
+Epoch 24/25
+45/45 [==============================] - 9s 211ms/sample - loss: 0.6378 - acc: 0.6667 - val_loss: 0.7503 - val_acc: 0.5000
+Epoch 25/25
+45/45 [==============================] - 10s 212ms/sample - loss: 0.6410 - acc: 0.6667 - val_loss: 0.7601 - val_acc: 0.5000
+
+
+
+Figures now render in the Plots pane by default. To make them also appear inline in the Console, uncheck "Mute Inline Plotting" under the Plots pane options menu. 
+
+40/40 [==============================] - 2s 51ms/sample - loss: 0.7601 - acc: 0.5000
+ACC: 0.500000
+
+PRE: 0.500000
+
+REC: 1.000000
+
+F1: 0.666667
+
+ACE: 0.250000
